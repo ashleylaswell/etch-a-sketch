@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  height:696px;
+  width:696px;
+  grid-template-columns: repeat(var(--size), 1fr);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.grid-item {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
