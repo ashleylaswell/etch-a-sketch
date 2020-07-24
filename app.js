@@ -13,8 +13,12 @@ function createGrid(size){
 createGrid(gridSize);
 
 let boxes = document.getElementsByClassName("grid-item");
-for (let i = 0; i < boxes.length; i++){
-  boxes[i].addEventListener("mouseover", function(e){
-    this.style.backgroundColor = "black";
-  })
+function drawGrid(){
+  for (let i = 0; i < boxes.length; i++){
+    boxes[i].addEventListener("mouseover", function(e){
+      this.style.backgroundColor = "black";
+    })
+  }
 }
+
+drawGrid();
