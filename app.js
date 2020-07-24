@@ -1,5 +1,13 @@
 let container = document.getElementById('container');
-let gridSize = prompt("How many blocks wide would you like your grid to be?")
+let limit = true;
+while (limit){
+  let gridSize = prompt("How many blocks wide would you like your grid to be? (200 or less)")
+  if (gridSize > 1 && gridSize <= 200){
+    createGrid(gridSize)
+    limit = false;
+  }
+}
+
 function createGrid(size){
   container.style.setProperty('--size', size);
   for(let i = 0; i < size * size; i++){
@@ -10,7 +18,6 @@ function createGrid(size){
   
 }
 
-createGrid(gridSize);
 
 let boxes = document.getElementsByClassName("grid-item");
 function drawGrid(){
@@ -22,3 +29,4 @@ function drawGrid(){
 }
 
 drawGrid();
+
