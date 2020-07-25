@@ -21,17 +21,17 @@
   background-color: black;
 }
 
-h1{
+#title{
   margin:5px;
   text-align:center;
 }
 
-p{
+#description{
   margin:5px;
   text-align:center;
 }
 
-button {
+.btn {
   margin: 10px auto;
   display: block;
 }
