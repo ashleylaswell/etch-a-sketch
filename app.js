@@ -1,4 +1,5 @@
 let container = document.getElementById('container');
+let boxes = document.getElementsByClassName("grid-item");
 
 let limit = true;
 while (limit){
@@ -18,7 +19,6 @@ function createGrid(size){
   }
 }
 
-let boxes = document.getElementsByClassName("grid-item");
 function drawOnGrid(){
   for (let i = 0; i < boxes.length; i++){
     boxes[i].addEventListener("mouseover", function(e){
