@@ -15,8 +15,8 @@
 
 #container {
   display: grid;
-  height:696px;
-  width:696px;
+  height:600px;
+  width:600px;
   grid-template-columns: repeat(var(--size), 1fr);
   grid-gap: 1px;
   margin-left:auto;
